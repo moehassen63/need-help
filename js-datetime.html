@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date&time</title>
+  </head>
+  <body>
+    <p id="output"></p>
+    <p id="output2"></p>
+
+    <script>
+      let dt = new Date();
+      document.getElementById("output").innerHTML = dt.getFullYear();
+      dt.setHours(8);
+      dt.setMinutes(8);
+      dt.setFullYear(2022);
+      document.getElementById("output2").innerHTML = dt;
+    </script>
+  </body>
+</html>
